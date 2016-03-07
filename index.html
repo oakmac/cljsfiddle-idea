@@ -14,6 +14,15 @@
 </head>
 <body>
 
+<div id="loadingContainer">
+  <div class="outer">
+    <div class="animation-target"><img src="img/cljs.svg" alt="CLJS Logo" /></div>
+  </div>
+  <h1>loading...</h1>
+</div>
+
+<div id="appContainer" style="display:none">
+
 <header>
 <div class="inner-wrapper">
   <h1>
@@ -71,5 +80,21 @@
 </div><!-- end .inner-wrapper -->
 </footer>
 
+</div><!-- end #appContainer -->
+
+<script src="js/jquery-2.2.1.min.js"></script>
+<script>
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function swap() {
+  $('#loadingContainer').fadeOut('fast', function() {
+    $('#appContainer').fadeIn('fast');
+  });
+}
+
+setTimeout(swap, getRandomInt(3000, 5000));
+</script>
 </html>
 </body>
