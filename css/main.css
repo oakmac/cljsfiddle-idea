@@ -34,6 +34,30 @@ header {
   padding: 10px;
 }
 
+header .inner-wrapper {
+  display: flex;
+}
+
+header .right {
+  margin: 8px 0 0 auto;
+}
+
+header .right a {
+  color: #bbb;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header .right a:hover {
+  color: #fff;
+  /*text-decoration: underline;*/
+}
+
 header h1 {
   color: #eee;
   font-size: 28px;
@@ -137,17 +161,21 @@ section h2 button .fa {
   color: #2c2c2c;
 }
 
-.clear-link {
-  color: #02c;
-  display: inline-block;
-  float: right;
-  font-size: 14px;
-  font-weight: 400;
-  text-decoration: none;
+/* NOTE: this is because the eraser icon is weirdly slanted to the right */
+#clearBtn {
+  padding-left: 14px;
 }
 
-.clear-link:hover {
-  text-decoration: underline;
+#noInputMsg {
+  color: #999;
+  font-family: "Georgia", serif;
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 70px;
+}
+
+#outputArea {
+  padding: 20px;
 }
 
 /*------------------------------------------------------------------------------
