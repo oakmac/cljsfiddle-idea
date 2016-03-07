@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta content="ie=edge" http-equiv="x-ua-compatible" />
+  <title>cljsfiddle.com design prototype</title>
+  <meta content="cljsfiddle.com design prototype" name="description" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="apple-touch-icon.png" rel="apple-touch-icon" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Droid+Sans+Mono" rel="stylesheet" />
+  <link href="css/normalize-3.0.3.css" rel="stylesheet" />
+  <link href="css/font-awesome-4.5.0.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+</head>
+<body>
+
+<header>
+<div class="inner-wrapper">
+  <h1>
+    <img src="img/cljs-ring.svg" alt="CLJS Ring" />
+    cljsfiddle<span class="tld">.com</span>
+  </h1>
+</div><!-- end .inner-wrapper -->
+</header>
+
+<main>
+<div class="inner-wrapper">
+
+<section id="inputContainer">
+  <h2>
+    <span class="text">ClojureScript</span>
+    <button class="primary" id="runBtn"><i class="fa fa-play"></i>Run</button>
+    <button class="secondary" id="saveBtn"><i class="fa fa-floppy-o"></i>Save</button>
+  </h2>
+<pre id="namespace">
+(ns cljsfiddle.app
+  (:require [reagent.core :refer [atom]]))
+</pre>
+<textarea id="mainInput">
+[:div
+  [:p "Hit Run to get a random number:"]
+  [:h1 (rand)]]
+</textarea>
+</section><!-- end #inputContainer -->
+
+<section id="outputContainer">
+  <h2>
+    <span class="text">Output</span>
+    <button class="secondary" id="clearBtn"><i class="fa fa-eraser"></i>Clear</button>
+  </h2>
+  <div id="outputArea">
+
+  </div>
+</section><!-- end #outputContainer -->
+
+</div><!-- end .inner-wrapper -->
+</main>
+
+<footer>
+<div class="inner-wrapper">
+  <p>cljsfiddle.com is an <a href="https://gitlab.com/escherize/cljsfiddle/">open source project</a> by <a href="https://twitter.com/escherize">@escherize</a></p>
+  <p>feedback welcome :)</p>
+</div><!-- end .inner-wrapper -->
+</footer>
+
+</html>
+</body>
