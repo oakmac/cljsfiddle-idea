@@ -55,7 +55,6 @@ header .right a {
 
 header .right a:hover {
   color: #fff;
-  /*text-decoration: underline;*/
 }
 
 header h1 {
@@ -169,7 +168,7 @@ section h2 button .fa {
 #noInputMsg {
   color: #999;
   font-family: "Georgia", serif;
-  font-size: 18px;
+  font-size: 17px;
   font-style: italic;
   margin-top: 70px;
 }
